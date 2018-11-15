@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [AppClientCode.js](./CS/AppClientCode.js) (VB: [AppClientCode.js](./VB/AppClientCode.js))
+* [Default.aspx](./CS/Default.aspx) (VB: [Default.aspx](./VB/Default.aspx))
+* [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx](./VB/Default.aspx))
+<!-- default file list end -->
 # ASPxGridView - BatchEdit - How to use and modify a control placed in DataItemTemplate
 
 
