@@ -51,11 +51,14 @@ Partial Public Class _Default
         Public Sub InstantiateIn(ByVal container As Control) Implements ITemplate.InstantiateIn
             Dim gridContainer As GridViewDataItemTemplateContainer = TryCast(container, GridViewDataItemTemplateContainer)
             If gridContainer IsNot Nothing Then
-                Dim column As GridViewDataColumn = gridContainer.Column
+                 Dim column As GridViewDataColumn = gridContainer.Column
+                Dim divContainer As System.Web.UI.HtmlControls.HtmlGenericControl = New System.Web.UI.HtmlControls.HtmlGenericControl()
+                gridContainer.Controls.Add(divContainer)
                 Dim rating As New ASPxRatingControl()
+                divContainer.Controls.Add(rating)
                 rating.ItemCount = 10
                 rating.ReadOnly = True
-                gridContainer.Controls.Add(rating)
+                divContainer.Attributes.Add("onclick", String.Format("grid.batchEditApi.StartEdit({0}, 0)", gridContainer.VisibleIndex))
             End If
         End Sub
     End Class
