@@ -45,10 +45,13 @@ public partial class _Default : System.Web.UI.Page
             if (gridContainer != null)
             {
                 GridViewDataColumn column = gridContainer.Column;
+                System.Web.UI.HtmlControls.HtmlGenericControl divContainer = new System.Web.UI.HtmlControls.HtmlGenericControl();
+                gridContainer.Controls.Add(divContainer);
                 ASPxRatingControl rating = new ASPxRatingControl();
+                divContainer.Controls.Add(rating);
                 rating.ItemCount = 10;
                 rating.ReadOnly = true;
-                gridContainer.Controls.Add(rating);
+                divContainer.Attributes.Add("onclick", String.Format("grid.batchEditApi.StartEdit({0}, 0)", gridContainer.VisibleIndex));
             }
         }
     }
