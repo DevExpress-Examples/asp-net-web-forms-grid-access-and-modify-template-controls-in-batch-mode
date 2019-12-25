@@ -19,7 +19,7 @@
                     <dx:GridViewDataColumn Name="rate1" FieldName="rate" Width="100px"></dx:GridViewDataColumn>
                     <dx:GridViewDataColumn Name="num" FieldName="num">
                         <DataItemTemplate>
-                            <div style="background-color: aquamarine; color:darkgreen; min-width: 50px; text-align: center; height: 100%" id="tmpl<%#Container.VisibleIndex%>"><%#Eval("num")%> </div>
+							<div style="background-color: aquamarine; color:darkgreen; min-width: 50px; text-align: center; height: 100%" id="tmpl<%#Container.VisibleIndex%>"><%#Eval("num")%> </div>
                         </DataItemTemplate>
                     </dx:GridViewDataColumn>
                     <dx:GridViewDataColumn Name="num2" FieldName="num" />
