@@ -3,7 +3,7 @@
 **[[Run Online]](https://codecentral.devexpress.com/t506160/)**
 <!-- run online end -->
 
-This example demonstrates how to create a templated column, add content to the template, and use client-side `GetCellTextContainer` and `GetControlsByPredicate` methods to access and modify the templat content in batch edit mode.
+This example demonstrates how to create a templated column, add content to the template, and use client-side `GetCellTextContainer` and `GetControlsByPredicate` methods to access and modify the template content in batch edit mode.
 
 ![Access and modify template control in batch mode](ModifyTemplateControls.png)
 
