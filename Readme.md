@@ -4,9 +4,6 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 # Grid View for ASP.NET Web Forms - How to access and modify a template control in batch edit mode
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128533050/)**
-<!-- run online end -->
 
 This example demonstrates how to create a templated column, add content to the template, and use client-side `GetCellTextContainer` and `GetControlsByPredicate` methods to access and modify the template content in batch edit mode.
 
