@@ -46,7 +46,7 @@ Partial Public Class _Default
 	Private Class RatingControlTemplate
 		Implements ITemplate
 
-		Public Sub InstantiateIn(ByVal container As Control)
+		Public Sub InstantiateIn(ByVal container As Control) Implements ITemplate.InstantiateIn
 			Dim gridContainer As GridViewDataItemTemplateContainer = TryCast(container, GridViewDataItemTemplateContainer)
 			If gridContainer IsNot Nothing Then
 				Dim column As GridViewDataColumn = gridContainer.Column
@@ -64,7 +64,7 @@ Partial Public Class _Default
 	Private Class ProgressControlTemplate
 		Implements ITemplate
 
-		Public Sub InstantiateIn(ByVal container As Control)
+		Public Sub InstantiateIn(ByVal container As Control) Implements ITemplate.InstantiateIn
 			Dim gridContainer As GridViewDataItemTemplateContainer = TryCast(container, GridViewDataItemTemplateContainer)
 			If gridContainer IsNot Nothing Then
 				Dim column As GridViewDataColumn = gridContainer.Column
